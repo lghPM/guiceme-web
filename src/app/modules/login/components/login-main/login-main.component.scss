@@ -1,0 +1,72 @@
+.title{
+  font-size: 20px;
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 2em;
+}
+
+.form-login {
+  flex-grow: 0;
+  margin: 0 0 0 10%;
+}
+
+.botonera{
+  display: flex;
+  grid-gap: 10px;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.botonera button{
+  width: 180px;
+}
+
+.terminos form{
+  margin: 0 0 0 4%;
+}
+
+@media only screen and (max-width: 768px) {
+.cerrarsm {
+  display: inline-block;
+  margin-right: 10px;
+}
+}
+
+.control-label {
+font-size: small;
+}
+
+div#contenedor_global {
+  border:none;
+}
+
+::ng-deep #contenedor_titulo {
+  display: none!important;
+  height: 40px;
+  width: 100%;
+  background-color: #545454;
+  text-align: center;
+  padding-top: 12px;
+  border-radius: 0px;
+}
+
+::ng-deep #contenedor_subtitulo {
+  height: 42px;
+  width: 100%;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.terminos a{
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #1122CC;
+  cursor: pointer;
+}

@@ -1,0 +1,80 @@
+.btn-actions{
+  display: flex;
+  grid-gap: 14px;
+  gap: 14px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px !important;
+  margin-bottom: -3px !important;
+}
+
+.btn-actions .btn{
+  width: 156px;
+  height: 39px;
+  padding-top: 8px;
+}
+.mat-dialog-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.icon-dialog{
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  border-left-width: 10px;
+  background-repeat: no-repeat;
+}
+
+.info{
+  background-image: url("../../../assets/images/info.svg");
+}
+
+.close-button{
+  float: right;
+  top:-24px;
+  right:-24px;
+  margin-bottom: -40px;
+  outline: none;
+}
+
+.close-icon {
+  transition: 1s ease-in-out;
+}
+
+hr {
+  margin-top: -6px;
+  margin-bottom: 25px;
+  border-top: 1px solid #DDDDDD;
+  margin-left: -23px;
+  margin-right: -23px;
+}
+
+mat-dialog-content p{
+  font-family: Montserrat;
+font-size: 18px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+.title-dialog{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.mat-icon.mat-warn {
+  color: #CCCCCC;
+}

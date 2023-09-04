@@ -1,0 +1,41 @@
+.login-content {
+  display: flex;
+  background-color: #fff;
+  min-height: 600px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+.col-title, .col-form{
+  flex: 1;
+  padding: 2em;
+}
+.col-title{
+  display: flex;
+  justify-content: center;
+}
+
+.col-form{
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  background-image: url("../../../../../assets/images/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-column {
+  background-color: #fff;
+}
+
+@media all and (max-width: 912px) {
+
+  .main-content {
+    padding-bottom: inherit;
+  }
+
+}

@@ -1,0 +1,58 @@
+
+<!-- Header -->
+<div class="header-nav d-flex justify-content-between align-items-center">
+  <div class="d-flex flex-row align-items-center">
+    <div><a class="brand"  href="{{urlBase}}">ceme</a></div>
+    <div><span class="separator">|</span></div>
+    
+
+  </div>
+  <div class="d-flex flex-column info-user">
+    <span class="user">
+      {{ name }}
+    </span>
+    <span class="rol">
+      {{ role }}
+    </span>
+  </div>
+</div>
+
+
+<!-- Header -->
+<!-- Contenido -->
+<div class="main-content">
+  <router-outlet name="contentido"></router-outlet>
+</div>
+<!-- Contenido -->
+
+
+<!-- Modal inactividad -->
+<div class="modal hide-modal" #tableModalSesion>
+  <div class="modal-dialog modal800">
+      <div class="modal-content" style="border-radius: 15px; text-align: center;">
+          <div class="modal-header" style="background-color: white;border-radius: 15px;">
+              <span class="glyphicon glyphicon-remove pull-right" style="color: black;" aria-hidden="true"
+                  (click)="closeStopModal()"></span>
+          </div>
+          <div class="modal-body row" style="padding-top: 0;">
+              <h4 class="text-ellipsis">La sesión está a punto de expirar</h4>
+              <div class="col-md-12" style="text-align: center; margin-top: 0px;margin-bottom: 10px; font-size: 18px;">
+                 ¿Desea continuar?
+              </div>
+
+              <div class="col-md-12 p0" style="margin-top: 25px; margin-bottom: 25px;">
+                  <div class="col-md-6">
+                      <button type="button" class="btn btn40 btn-primary pt6" style="width: 200px;"
+                          (click)="closeStopModal()">Continuar</button>
+                  </div>
+
+                  <div class="col-md-6">
+                      <button type="button" class="btn btn40 btn-danger pt6" style="width: 200px;"
+                          (click)="salirSesion()">Salir</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Modal inactividad -->

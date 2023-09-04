@@ -1,0 +1,22 @@
+<button mat-icon-button class="close-button" [mat-dialog-close]="false">
+  <mat-icon class="close-icon" color="warn">close</mat-icon>
+</button>
+
+<mat-dialog-title class="w-100 mat-dialog-title">
+  <span class="icon-dialog info"  ></span>
+  <span class="title-dialog">Información</span>
+</mat-dialog-title>
+
+<hr>
+<mat-dialog-content class="text-center" >
+<p>{{data.mensaje}}</p>
+<p>{{data.pregunta}}</p>
+
+</mat-dialog-content>
+
+<mat-dialog-actions class="btn-actions">
+  <button type="button" id="save-form" (click)="cerrar()"  class="btn btn-danger">{{data.labelCerrar}}</button>
+  <button type="button" id="save-form" (click)="continuar()"  *ngIf="!data.noAceptar" class="btn btn-primary">{{data.labelOk}}</button>
+</mat-dialog-actions>
+
+

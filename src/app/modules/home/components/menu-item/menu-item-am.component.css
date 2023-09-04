@@ -1,0 +1,195 @@
+mat-icon {
+    margin-right: 10px;
+}
+
+
+::ng-deep .mat-expansion-panel-header{
+  width: 100%!important;
+  font-family: 'Montserrat' !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #404041;
+  padding: 0 14px 0 5px!important;
+}
+
+app-menu-item-am{
+  width: 205px;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  padding: 0px!important;
+}
+
+.icon-menu{
+  background-size: contain;
+  height: 29px;
+  width: 37px;
+  border-left-width: 10px;
+  padding-left: 10px;
+  /* margin-left: 12px; */
+  background-repeat: no-repeat;
+}
+
+.image-home{
+  background-image: url("../../../../../assets/images/clarity_administrator-line.svg");
+}
+
+.image-catalogos{
+  background-image: url("../../../../../assets/images/carbon_catalog.svg");
+}
+
+.image-search{
+  background-image: url("../../../../../assets/images/akar-icons_search.svg");
+}
+
+/* Agregar dentro del catalogo de xls*/
+.image-autodependencia{
+  background-image: url("../../../../../assets/images/fluent_auto-fit-width-20-filled.svg");
+}
+
+.image-pay{
+  background-image: url("../../../../../assets/images/akar-icons_search.svg");
+}
+
+.image-configure{
+  background-image: url("../../../../../assets/images/icon-park_setting-config.svg");
+}
+
+.image-aportacion{
+  background-image: url("../../../../../assets/images/clarity_piggy-bank-line.svg");
+}
+
+.image-afiliacion{
+  background-image: url("../../../../../assets/images/ci_id-card.svg");
+}
+
+.image-report{
+  background-image: url("../../../../../assets/images/material-symbols_report-outline.svg");
+}
+
+.mat-expansion-panel-header:not([aria-disabled=true]) {
+  cursor: pointer;
+  width: 95%;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
+
+.mat-expansion-panel-header-title, .mat-expansion-panel-header-description {
+  font-size: 11px;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.mat-expansion-panel-body {
+  padding: 0 24px 0px !important;
+}
+
+.children-style{
+  width: 205px;
+  padding: 7px 10px 7px 15px;
+  cursor: pointer;
+}
+
+.mat-expansion-panel .mat-expanded{
+background-color: #2A5B4F;
+}
+
+.mat-expansion-panel-child .mat-expanded{
+  background: #9D2449!important;
+}
+
+
+.mat-expansion-panel-child:not(.mat-expanded) .mat-expansion-panel-header:not(.mat-expanded) {
+ padding: 3px!important;
+}
+
+
+.mat-expansion-panel-child .mat-expansion-panel-header .mat-expansion-indicator::after{
+  display: none;
+}
+
+.mat-expansion-panel-child .mat-expanded > mat-panel-title.mat-expansion-panel-header-title {
+  color:#fff
+}
+
+mat-panel-title.mat-expansion-panel-header-title.panel-title-child2.ng-star-inserted {
+  background-color: #fff;
+  padding: 7px 23px 7px 40px;
+}
+
+.mat-expansion-panel.mat-expanded .panel-title-menu{
+  color: #fff;
+}
+.mat-expansion-panel-child:not(.mat-expanded) .panel-title-menu{
+  color: #000;
+}
+
+.mat-expansion-panel.mat-expanded .mat-expansion-panel-header-title > .mat-icon{
+  filter:  brightness(0) invert(1);
+}
+
+::ng-deep .mat-expansion-panel.mat-expanded .mat-expansion-panel-header.mat-expanded .mat-expansion-indicator::after {
+  color: #fff;
+  padding-right: 0px;
+}
+
+::ng-deep .mat-expansion-panel-child:not(.mat-expanded) .mat-expansion-panel-header:not(.mat-expanded) .mat-expansion-indicator::after {
+  color: #fff;
+  display: none;
+}
+::ng-deep .mat-expansion-panel-child.mat-expanded .mat-expansion-panel-header.mat-expanded .mat-expansion-indicator::after {
+  color: #fff;
+  display: none;
+}
+
+.mat-expansion-panel{
+  border-radius: 0px!important;
+  width: 205px!important;
+}
+
+.panel-title-child:hover{
+  background: #9D2449;
+  color:#fff;
+}
+
+.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]){
+  background-color: #DDDDDD;
+}
+.mat-expansion-panel-child:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]){
+  background-color: #9D2449;
+}
+
+.mat-expansion-panel-child:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) mat-panel-title{
+  color: #fff!important;
+}
+.mat-expansion-panel-child.mat-expanded .mat-expansion-panel-header mat-panel-title{
+  color: #fff!important;
+  padding-right: 0px;
+}
+
+.mat-expansion-panel-spacing {
+  margin: 0;
+}
+
+mat-panel-title.mat-expansion-panel-header-title.ng-tns-c252-8.children-style {
+  padding-right: 0px;
+}
+
+.tamano-child{
+  padding-right: 0px;
+  height: 30px;
+}
+
+
+mat-panel-title.mat-expansion-panel-header-title.panel-title-child2.ng-star-inserted:hover {
+  background-color: #DDDDDD;
+
+}
+
+

@@ -1,0 +1,3 @@
+﻿<div  *ngFor="let alert of alerts" class="{{cssClass(alert)}} d-flex flex-row" >
+    <span class="align-self-center mr-auto ml-auto " [innerHTML]="alert.message"></span>
+</div>

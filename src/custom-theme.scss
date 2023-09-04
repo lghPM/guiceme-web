@@ -1,0 +1,50 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
+$md-mcgpalette0: (
+    50 : #ede4e6,
+    100 : #d2bbc2,
+    200 : #b48e99,
+    300 : #966070,
+    400 : #803e51,
+    500 : #691c32,
+    600 : #61192d,
+    700 : #561426,
+    800 : #4c111f,
+    900 : #3b0913,
+    A100 : #691c32,
+    A200 : #691c32,
+    A400 : #691c32,
+    A700 : #691c32,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #ffffff,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$primary: mat.define-palette($md-mcgpalette0);
+$accent: mat.define-palette($md-mcgpalette0, A200, A100, A400);
+$warn: mat.define-palette($md-mcgpalette0);
+$custom-typography: mat.define-typography-config(
+  $font-family: 'Montserrat'!important
+  );
+
+$theme: mat.define-light-theme((
+  color: (primary: $primary, accent: $accent, warn: $warn),
+  typography: $custom-typography,
+));
+
+
+@include mat.all-component-themes($theme);

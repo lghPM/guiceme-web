@@ -1,0 +1,38 @@
+{
+  "/msceme-oauth": {
+    "target": "https://msceme-oauth-qa.cloudapps.imss.gob.mx/msceme-oauth",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": { "^/msceme-oauth": "" }
+  },
+  "/msceme-catalogos": {
+    "target": "https://msceme-catalogos-qa.cloudapps.imss.gob.mx/msceme-catalogos",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": { "^/msceme-catalogos": "" }
+  },
+  "/msceme-registro": {
+    "target": "https://msceme-registro-qa.cloudapps.imss.gob.mx/msceme-registro",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": { "^/msceme-registro": "" }
+  },
+  "/msceme-reportes": {
+    "target": "https://msceme-reportes-qa.cloudapps.imss.gob.mx/msceme-reportes",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": { "^/msceme-reportes": "" }
+  },
+  "/msceme-interfaces": {
+    "target": "https://msceme-interfaces-qa.cloudapps.imss.gob.mx/msceme-interfaces",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": { "^/msceme-interfaces": "" }
+  },
+  "/msceme-consultas": {
+    "target": "https://msceme-consultas-qa.cloudapps.imss.gob.mx/msceme-consultas",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": { "^/msceme-consultas": "" }
+  }
+}

@@ -1,0 +1,4 @@
+<mat-accordion [multi]="false">
+<app-menu-item-am *ngFor="let menuitem of finalMenu" [menuitem]="menuitem"></app-menu-item-am>
+</mat-accordion>
+<button class="btn btn-sm btn-danger" (click)="salirSesion()" id="log-out">Cerrar Sesi&oacute;n</button>
