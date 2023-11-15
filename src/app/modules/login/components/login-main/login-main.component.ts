@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormlyFieldConfig } from '@ngx-formly/core';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, NgForm } from '@angular/forms';
 import { GeneralComponent } from 'src/app/modules/general/general.component';
 import { AuthService } from '../../services/auth.service';
 import { HttpParams } from '@angular/common/http';
@@ -17,12 +17,14 @@ export class LoginMainComponent extends GeneralComponent implements OnInit, OnDe
   eFirmaToken: any;
   disableBtn: boolean = true;
   disableNoTc: boolean = true;
+  token: string|undefined;
 
   constructor(public router: Router,
     public authService: AuthService,
     public dialog: MatDialog
   ) {
     super();
+    this.token = undefined;
   }
 
   ngOnInit() {
@@ -93,10 +95,12 @@ export class LoginMainComponent extends GeneralComponent implements OnInit, OnDe
       data.nomPerfil = perfil.desPerfil;
       this._sesionStorage.saveUser(data);
       this.navegar(data);
+      
     }).catch((err) => {
       this._alertServices.error(err.error.error_description);
     });
 
+    console.debug(`Token [${this.token}] generated`);
   }
 
   navegar(dataUser) {
@@ -116,5 +120,15 @@ export class LoginMainComponent extends GeneralComponent implements OnInit, OnDe
 
   doCancel(){
     window.location.reload();
+  }
+  public send(form: NgForm): void {
+    if (form.invalid) {
+      for (const control of Object.keys(form.controls)) {
+        form.controls[control].markAsTouched();
+      }
+      return;
+    }
+
+    console.debug(`Token [${this.token}] generated`);
   }
 }
